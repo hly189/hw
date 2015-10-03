@@ -1,0 +1,7 @@
+(fact (parent abraham barack))
+(fact (parent abraham clinton))
+(fact (parent delano herbert))
+(fact (parent fillmore abraham))
+(fact (parent fillmore delano))
+(fact (parent fillmore grover))
+(fact (parent eisenhower fillmore))

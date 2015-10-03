@@ -1,0 +1,17 @@
+(fact (append-to-form () ?x ?x))
+(fact (append-to-form (?a . ?r) ?y (?a . ?z))
+      (append-to-form       ?r  ?y       ?z))
+
+(fact (append-3 ?x ?y ?z ?xyz)
+	(append-to-form ?x ?y ?xy)
+	(append-to-form ?xy ?z ?xyz))
+
+(fact (insert ?a ?r (?a . ?r)))
+(fact (insert ?a (?b . ?r) (?b . ?s))
+      (insert  ?a       ?r        ?s))
+
+(fact (anagram () ()))
+(fact (anagram (?a . ?r) ?b)
+	  (insert   ?a   ?s  ?b)
+	  (anagram  ?r   ?s))
+
